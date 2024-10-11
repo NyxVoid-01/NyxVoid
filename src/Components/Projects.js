@@ -102,7 +102,7 @@ function Projects() {
 
           <div className="project-info">
             <div className="project-tech-logos">
-              <img src="./numpy.svg" alt="JavaScript" />
+              <img src="NyxVoid/numpy.svg" alt="JavaScript" />
               <span className="more-tech">+</span> {/* Símbolo "+" agregado */}
               <img src="https://img.icons8.com/color/48/python--v1.png" alt="HTML" />
               <a href="https://github.com/Edithson1/Analysis_and_Design_of_Algorithms_Grupo-3.git" target="_blank" rel="noopener noreferrer">
