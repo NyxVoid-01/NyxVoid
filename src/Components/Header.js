@@ -13,7 +13,7 @@ function Header() {
       {/* Enlaces de navegación */}
       <nav className="nav-links-container">
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/NyxVoid">Home</Link></li>
           <li><a href="#portfolio">Portafolio</a></li> {/* Lleva a la sección de proyectos */}
           <li><Link to="/blog">Blog</Link></li>
         </ul>
@@ -48,7 +48,7 @@ function Header() {
 
       {/* Ícono a la derecha */}
       <div className="user-icon">
-        <img src="./thf.jpeg" alt="User Icon" className="user-icon-img" />
+        <img src="NyxVoid/thf.jpeg" alt="User Icon" className="user-icon-img" />
       </div>
     </header>
   );

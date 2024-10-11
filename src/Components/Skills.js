@@ -58,11 +58,11 @@ function Skills() {
                         <p>Node js</p>
                     </div>
                     <div className="language-card tensorflow">
-                        <img src="./tensorflow.svg" alt="Tensorflow" />
+                        <img src="NyxVoid/tensorflow.svg" alt="Tensorflow" />
                         <p>Tensorflow</p>
                     </div>
                     <div className="language-card keras">
-                        <img src="./keras.svg" alt="Keras" />
+                        <img src="NyxVoid/keras.svg" alt="Keras" />
                         <p>Keras</p>
                     </div>
                     <div className="language-card flask">
@@ -78,11 +78,11 @@ function Skills() {
                         <p>Pandas</p>
                     </div>
                     <div className="language-card matplotlib">
-                        <img src="./matplotlib.svg" alt="Matplotlib" />
+                        <img src="NyxVoid/matplotlib.svg" alt="Matplotlib" />
                         <p>Matplotlib</p>
                     </div>
                     <div className="language-card scikit-learn">
-                        <img src="./Scikit-learn.svg" alt="Scikit-learn" />
+                        <img src="NyxVoid/Scikit-learn.svg" alt="Scikit-learn" />
                         <p>Scikit-learn</p>
                     </div>
                 </div>

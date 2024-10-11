@@ -66,7 +66,7 @@ function Home() {
 
         {/* Imagen a la derecha */}
         <div className="intro-image">
-          <img src="./perfil.png" alt="Imagen de Introducción" />
+          <img src="NyxVoid/perfil.png" alt="Imagen de Introducción" />
         </div>
       </section>
 

@@ -6,8 +6,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route exact path="/NyxVoid/" element={<Home />} />
+        <Route path="/Blog" element={<Blog />} />
       </Routes>
     </Router>
   );

@@ -41,7 +41,7 @@ function Projects() {
         <div className="card-projects">
           <div className="blob"></div>
           <div className="card-base"></div>
-          <div className="card-image" style={{ backgroundImage: 'url(./ML.png)' }}></div>
+          <div className="card-image" style={{ backgroundImage: 'url(NyxVoid/ML.png)' }}></div>
           <div className="card-overlay"></div>
 
           <div className="project-info">
@@ -69,7 +69,7 @@ function Projects() {
         <div className="card-projects">
           <div className="blob"></div>
           <div className="card-base"></div>
-          <div className="card-image" style={{ backgroundImage: 'url(./SolarWind.jpg)' }}></div>
+          <div className="card-image" style={{ backgroundImage: 'url(NyxVoid/SolarWind.jpg)' }}></div>
           <div className="card-overlay"></div>
 
           <div className="project-info">
@@ -97,7 +97,7 @@ function Projects() {
         <div className="card-projects">
           <div className="blob"></div>
           <div className="card-base"></div>
-          <div className="card-image" style={{ backgroundImage: 'url(./portal_matricula.png)' }}></div>
+          <div className="card-image" style={{ backgroundImage: 'url(NyxVoid/portal_matricula.png)' }}></div>
           <div className="card-overlay"></div>
 
           <div className="project-info">
