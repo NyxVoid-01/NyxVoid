@@ -1,0 +1,210 @@
+.projects {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilo de la tarjeta de proyectos con borde transparente */
+.card-projects {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s ease;
+    color: white;
+}
+
+/* Nueva capa base blanca que servirá como fondo para el círculo animado */
+.card-base {
+    position: absolute;
+    width: 444px;
+    height: 245px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    top: 3px;
+    left: 2.5px;
+}
+
+/* Imagen que se ajustará para dejar espacio para el borde visible */
+.card-image {
+    position: absolute;
+    width: 444px;
+    height: 245px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    z-index: 2;
+    top: 3px;
+    left: 0.6%;
+    transition: 0.5s ease;
+}
+
+.card-projects:hover .card-image {
+    filter: blur(5px);
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 14px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.card-projects:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Bola animada que se mueve alrededor de la tarjeta */
+.blob {
+    position: absolute;
+    z-index: 0;
+    top: -10px;
+    left: -10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: 1;
+    filter: blur(15px);
+    animation: blob-move 5s linear infinite;
+}
+
+/* Animación que mueve la bola alrededor del borde de la tarjeta */
+@keyframes blob-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(410px, 0);
+    }
+    50% {
+        transform: translate(410px, 210px);
+    }
+    75% {
+        transform: translate(0px, 210px);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
+/* Detalles que se muestran al hacer hover, animados desde abajo */
+.details-projects {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(56%);
+    transition: all 0.5s ease;
+    color: white;
+    padding: 10px;
+}
+
+.card-projects:hover .details-projects {
+    transform: translateY(-15%);
+    transition-delay: 0.5s;
+}
+
+/* Botón dentro de la tarjeta */
+.button-projects {
+    background-color: aqua;
+    color: black;
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-projects:hover {
+    background-color: lightblue;
+}
+
+/* Estilo para la información adicional que aparece al hacer hover, animada desde arriba */
+.project-info {
+    position: absolute;
+    top: -100px; /* Comienza fuera de la tarjeta, arriba */
+    left: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    color: white;
+    opacity: 0;  /* Por defecto, está oculto */
+    transform: translateY(-100%);  /* Comienza desplazada hacia arriba */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+    z-index: 4; /* Aparece sobre todo lo demás */
+}
+
+.card-projects:hover .project-info {
+    opacity: 1;  /* Aparece */
+    transform: translateY(230%); /* Se desliza desde arriba */
+    transition-delay: 0.4s;
+}
+
+/* Logos de tecnologías y el logo de GitHub */
+.project-tech-logos {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos a los lados opuestos */
+    align-items: center; /* Alinea verticalmente los logos de tecnologías y GitHub */
+    width: 100%;
+}
+
+/* Logos de tecnologías (parte izquierda) */
+.project-tech-logos img {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px; 
+}
+
+/* Símbolo "+" entre los logos */
+.project-tech-logos .more-tech {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px; /* Asegura espacio después del "+" */
+}
+
+/* Logo de GitHub en la esquina superior derecha */
+.project-tech-logos a {
+    margin-left: 240px; /* Empuja el logo de GitHub a la derecha */
+}
+
+/* Nombre del proyecto */
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Descripción del proyecto */
+.project-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Estilo del nombre del proyecto (título) */
+.cardHeader-projects h2 {
+    margin-bottom: 5px; /* Reduce el margen inferior para reducir el espacio con la descripción */
+}
+
+/* Estilo de la descripción del proyecto (texto) */
+.cardText-projects p {
+    margin-top: 0; /* Elimina el margen superior */
+}
+

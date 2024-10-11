@@ -1,0 +1,237 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para cada sección */
+    gap: 20px; /* Espacio entre las secciones */
+    justify-items: center; /* Centra las secciones horizontalmente */
+    padding: 0 250px;
+}
+
+skills {
+    padding: 20px;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);  /* Tres columnas */
+    gap: 20px;
+    justify-items: center;
+}
+
+.language-card {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-color, rgba(255, 255, 255, 0.05)); /* Fondo variable */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    border: 3px solid transparent; /* Borde invisible por defecto */
+    --border-color: transparent; /* Borde inicial */
+}
+
+/* Efecto hover: agrandar el ícono y mostrar borde */
+.language-card:hover {
+    transform: scale(1.05); /* Ajuste del scale */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Sombra más grande */
+    border-color: var(--border-color); /* Color del borde al hacer hover */
+}
+
+/* Difuminación común para todos los íconos en hover */
+.language-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px; /* Bordes redondeados */
+    z-index: -1;
+}
+
+/* Texto del lenguaje que aparece en hover */
+.language-card p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: -40px;
+    background-color: transparent; /* Fondo transparente hasta el hover */
+    padding: 5px 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.0s ease, background-color 0.0s ease;
+    white-space: nowrap;
+}
+
+/* Mostrar el nombre del lenguaje en hover */
+.language-card:hover p {
+    opacity: 5; /* Aparece en hover */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el texto */
+    border-color: var(--border-color); /* El borde del texto toma el color del lenguaje */
+    color: var(--border-color); /* El color del texto cambia según el lenguaje */
+}
+
+/* Estilo de la imagen */
+.language-card img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Variables por lenguaje */
+
+/* JavaScript */
+.language-card.javascript {
+    --border-color: #f0db4f; /* Color del borde */
+    --hover-bg-color: rgba(240, 219, 79, 2); /* Difuminación amarilla en hover */
+    background-color: rgba(240, 219, 79, 0.35); /* Fondo amarillo */
+}
+
+/* Python */
+.language-card.python {
+    --border-color: #306998; /* Color del borde */
+    --hover-bg-color: rgba(53, 114, 165, 2); /* Difuminación azul en hover */
+    background-color: rgba(53, 114, 165, 0.35); /* Fondo azul */
+}
+
+/* C++ */
+.language-card.cpp {
+    --border-color: #00599C; /* Color del borde */
+    --hover-bg-color: rgba(0, 89, 156, 2); /* Difuminación azul en hover */
+    background-color: rgba(3, 109, 190, 0.35); /* Fondo azul oscuro */
+}
+
+/* C */
+.language-card.c {
+    --border-color: #A8B9CC; /* Color del borde */
+    --hover-bg-color: rgba(168, 185, 204, 2); /* Difuminación gris en hover */
+    background-color: rgba(77, 128, 187, 0.35); /* Fondo gris */
+}
+
+/* R */
+.language-card.r {
+    --border-color: #276DC3; /* Color del borde */
+    --hover-bg-color: rgba(39, 109, 195, 2); /* Difuminación azul en hover */
+    background-color: rgba(132, 143, 156, 0.35); /* Fondo azul */
+}
+
+/* SQL */
+.language-card.sql {
+    --border-color: #00618a; /* Color del borde */
+    --hover-bg-color: rgba(0, 97, 138, 2); /* Difuminación azul oscuro en hover */
+    background-color: rgba(15, 89, 150, 0.35); /* Fondo azul oscuro */
+}
+
+/* ---- Frameworks y Librerías ---- */
+
+/* React */
+.language-card.react {
+    --border-color: #61dafb;
+    --hover-bg-color: rgba(97, 218, 251, 2);
+    background-color: rgba(97, 218, 251, 0.35);
+}
+
+/* NodeJS */
+.language-card.nodejs {
+    --border-color: #539e43;
+    --hover-bg-color: rgba(83, 158, 67, 2);
+    background-color: rgba(83, 158, 67, 0.35);
+}
+
+/* Flask */
+.language-card.flask {
+    --border-color: #c9c9c9;
+    --hover-bg-color: rgba(0, 0, 0, 2);
+    background-color: rgba(82, 82, 82, 0.35);
+}
+
+/* Tensorflow */
+.language-card.tensorflow {
+    --border-color: #ff6f00;
+    --hover-bg-color: rgba(255, 111, 0, 2);
+    background-color: rgba(255, 111, 0, 0.35);
+}
+
+/* Keras */
+.language-card.keras {
+    --border-color: #d00000;
+    --hover-bg-color: rgba(208, 0, 0, 2);
+    background-color: rgba(199, 133, 133, 0.35);
+}
+
+/* Numpy */
+.language-card.numpy {
+    --border-color: #6057e2;
+    --hover-bg-color: rgba(1, 50, 67, 2);
+    background-color: rgba(23, 113, 143, 0.35);
+}
+
+/* Pandas */
+.language-card.pandas {
+    --border-color: #e4a444;
+    --hover-bg-color: rgba(21, 4, 88, 2);
+    background-color: rgba(88, 55, 221, 0.349);
+}
+
+/* Matplotlib */
+.language-card.matplotlib {
+    --border-color: #11557c;
+    --hover-bg-color: rgba(17, 85, 124, 2);
+    background-color: rgba(17, 85, 124, 0.35);
+}
+
+/* Scikit-learn */
+.language-card.scikit-learn {
+    --border-color: #f7931e;
+    --hover-bg-color: rgba(247, 147, 30, 2);
+    background-color: rgba(247, 147, 30, 0.35);
+}
+
+/* ---- Herramientas ---- */
+
+/* VS Code */
+.language-card.vscode {
+    --border-color: #007acc;
+    --hover-bg-color: rgba(0, 122, 204, 2);
+    background-color: rgba(0, 122, 204, 0.35);
+}
+
+/* Pycharm */
+.language-card.pycharm {
+    --border-color: #21d789;
+    --hover-bg-color: rgba(33, 215, 137, 2);
+    background-color: rgba(33, 215, 137, 0.35);
+}
+
+/* Git */
+.language-card.git {
+    --border-color: #f05033;
+    --hover-bg-color: rgba(240, 80, 51, 2);
+    background-color: rgba(240, 80, 51, 0.35);
+}
+
+/* GitHub */
+.language-card.github {
+    --border-color: #eee8e8;
+    --hover-bg-color: rgba(24, 23, 23, 2);
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* GPT-4 */
+.language-card.gpt {
+    --border-color: rgb(11, 218, 170);
+    --hover-bg-color: rgba(0, 166, 126, 2);
+    background-color: #19daad59;
+}
+
+/* Linux */
+.language-card.linux {
+    --border-color: #fcc624;
+    --hover-bg-color: rgba(252, 198, 36, 2);
+    background-color: rgba(252, 198, 36, 0.35);
+}

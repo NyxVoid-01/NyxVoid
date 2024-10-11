@@ -1,0 +1,112 @@
+.certifications {
+    padding: 20px;
+}
+
+.certifications h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-certifications-container { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-certifications {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Contenedor de la imagen */
+.card-certifications .front-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen dentro de la tarjeta */
+.card-certifications .front-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Mantener proporciones */
+}
+
+/* Barra naranja ajustada al tamaño de la imagen */
+.card-certifications .front-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px; /* Ancho de la barra */
+    height: 100%; /* Ajustar la altura a la imagen */
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+}
+
+/* Efecto hover: La barra se expande a toda la imagen */
+.card-certifications:hover .front-content::after {
+    width: 100px; /* Se expande la barra */
+}
+
+/* Contenido de la tarjeta (descripción y texto) */
+.card-certifications .content-certifications {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    color: white;
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+}
+
+/* Encabezado del contenido */
+.card-certifications .content-certifications .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-certifications .content-certifications p {
+    line-height: 1.5;
+}
+
+/* Efecto hover en la tarjeta: Desplazar el contenido */
+.card-certifications:hover .content-certifications {
+    transform: translateX(-100%);
+}
+
+/* Efecto hover en la tarjeta: Mover la imagen */
+.card-certifications:hover .front-content {
+    transform: translateX(20%);
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-certifications {
+        width: 100%;
+        max-width: 90%;
+    }
+}
