@@ -3,7 +3,6 @@ import Header from '../Components/Header';
 import Projects from '../Components/Projects';
 import Skills from '../Components/Skills';
 import Certifications from '../Components/Certifications';
-import Footer from '../Components/Footer';
 import './home.css'; // Archivo CSS que usaremos para el diseño
 
 function Home() { 
@@ -55,7 +54,8 @@ function Home() {
         <div className="intro-text">
           <h1>Estudiante de Ingeniería<br />Informática</h1>
           <h3 style={{ color: '#ffae38' }}>Soy Antony Villar, desarrollador de software apasionado por crear soluciones innovadoras mediante el uso de la inteligencia artificial, con un especial interés en procesamiento de lenguaje natural (NLP). Además, disfruto de la meditación y tengo un gran gusto por el rock gótico.</h3>
-          <h9>Ayudando a hacer del mundo un lugar mejor a través del software de calidad.</h9>
+          <br></br>
+          <h9 className="tagline">Ayudando a hacer del mundo un lugar mejor a través del software de calidad.</h9>
 
           {/* Flecha de Scroll debajo del texto */}
           <a href="#portfolio" className="scroll-down">
@@ -72,11 +72,15 @@ function Home() {
 
       {/* Sección de Portafolio (Proyectos) */}
       <section id="portfolio">
+        
         <Projects />
       </section>
 
       {/* Sección de Habilidades */}
       <section id="skills">
+        <br></br>
+        <br></br>
+
         <Skills />
       </section>
 
@@ -88,7 +92,6 @@ function Home() {
         <Certifications />
       </section>
 
-      <Footer />
     </div>
   );
 }

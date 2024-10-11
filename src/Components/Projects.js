@@ -4,7 +4,7 @@ import './CSS/projects.css';
 function Projects() {
   return (
     <section className="projects">
-      <h1 align="center">My Projects</h1>
+      <h1 align="center">Mis proyectos</h1>
       <br></br>
       <div className="project-cards">
 

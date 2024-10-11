@@ -1,0 +1,57 @@
+/* Estilos para la sección del blog */
+.blog-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .blog-title {
+    font-size: 2.5em;
+    color: #ffd519; /* Color amarillo para el título */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .blog-subtitle {
+    font-size: 1.8em;
+    color: #ffd519; /* Subtítulos también en amarillo */
+    margin: 30px 0 15px;
+  }
+  
+  .blog-text {
+    font-size: 1.1em;
+    color: #fff; /* Texto principal en blanco para contraste */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .blog-text strong {
+    color: #ffd519; /* Resaltar texto importante en amarillo */
+  }
+  
+  /* Estilo de la imagen */
+  .blog-image-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .blog-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Añadir un hover para los enlaces o elementos interactivos */
+  .blog-text a {
+    color: #ffd519;
+    text-decoration: none;
+  }
+  
+  .blog-text a:hover {
+    text-decoration: underline;
+  }
+  
