@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/NyxVoid/" element={<Home />} />
+        <Route exact path="/NyxVoid" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
       </Routes>
     </Router>
