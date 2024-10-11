@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NyxVoid/static/css/main.ecdcb318.css",
-    "main.js": "/NyxVoid/static/js/main.002548a7.js",
+    "main.js": "/NyxVoid/static/js/main.1697f953.js",
     "static/js/453.ff997abb.chunk.js": "/NyxVoid/static/js/453.ff997abb.chunk.js",
     "index.html": "/NyxVoid/index.html",
     "main.ecdcb318.css.map": "/NyxVoid/static/css/main.ecdcb318.css.map",
-    "main.002548a7.js.map": "/NyxVoid/static/js/main.002548a7.js.map",
+    "main.1697f953.js.map": "/NyxVoid/static/js/main.1697f953.js.map",
     "453.ff997abb.chunk.js.map": "/NyxVoid/static/js/453.ff997abb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecdcb318.css",
-    "static/js/main.002548a7.js"
+    "static/js/main.1697f953.js"
   ]
 }
