@@ -13,7 +13,7 @@ function Header() {
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = `${process.env.PUBLIC_URL}/cv.pdf`;  // Ruta del archivo CV
-    link.setAttribute('download', 'CV_Antony_Villar.pdf');  // Nombre del archivo
+    link.setAttribute('download', 'CV-Antony-Villar.pdf');  // Nombre del archivo
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);  // Eliminar el enlace después de la descarga
